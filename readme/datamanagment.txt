@@ -1,0 +1,20 @@
+Как ето приложение обрабатывает данные?
+
+В лаунчере мы используем depotdownloader от SteamRE (https://github.com/steamre/depotdownloader) как основной модуль. Весь его исходный код открыт, и вы можете его просмотреть.
+
+
+Куда попадают ваши данные?
+
+Для принятия данных используеться:
+● set /p "Логин: " для логина
+● set /p "Пароль: " для пароля
+
+И после етого передаем данные depotdownloader:
+%~dp0modules/depotdownloader.exe -[данные игры] -username %Логин% -password %Пароль%
+
+
+Все проекты open sourse, и вы можете лично убедиться в етом.
+
+
+●depotdownloader: https://github.com/steamre/depotdownloader
+# cs2l: https://github.com/Amarasenik/Cs2L-Concole
